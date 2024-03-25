@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:padding="@dimen/_24dp"
+    tools:context="com.example.Activities.SigInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40dp"
+            android:text="@string/wellcome_back"
+            android:textColor="@color/primary_dark"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:text="@string/login_to_continue"
+            android:textColor="@color/primary_dark"
+            android:textSize="@dimen/_18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/emailEdt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background_input"
+            android:hint="email"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/_16dp"
+            android:paddingEnd="@dimen/_16dp"
+            android:textColor="@color/primary_dark"
+            android:textSize="@dimen/_13sp"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/passwordEdt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_input"
+            android:hint="password"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/_16dp"
+            android:textColor="@color/primary_dark"
+            android:textSize="@dimen/_13sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/LoginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:text="Log In"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            app:cornerRadius="@dimen/_8dp"
+            />
+        <TextView
+            android:id="@+id/resetpasswordTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quên mật Khẩu"
+            android:gravity="end"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="don't have account?"
+                android:textColor="@color/primary_dark"
+                android:layout_marginStart="@dimen/_60sdp"/>
+            <TextView
+                android:id="@+id/textCreateNewAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:textColor="#2196F3"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

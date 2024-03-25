@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ChatFireBase</string>
+    <string name="login_to_continue">Login To continue</string>
+    <string name="wellcome_back">Wellcome Back</string>
+</resources>
