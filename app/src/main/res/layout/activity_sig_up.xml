@@ -13,28 +13,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_40dp"
-            android:text="@string/wellcome_back"
-            android:textColor="@color/primary_dark"
-            android:textSize="@dimen/_18sdp"
-            android:textStyle="bold" />
+            android:layout_height="@dimen/_160sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/login" />
 
         <FrameLayout
             android:id="@+id/layoutImg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_20sdp">
+            android:layout_marginTop="@dimen/_10sdp">
 
             <com.makeramen.roundedimageview.RoundedImageView
                 android:id="@+id/imgProfile"
-                android:layout_width="@dimen/_80sdp"
-                android:layout_height="@dimen/_80sdp"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
                 android:background="@drawable/background_img"
                 android:scaleType="centerCrop"
                 app:riv_oval="true" />
@@ -44,16 +41,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="+"
+                android:text="image"
                 android:textColor="@color/secondary_text"
-                android:textSize="@dimen/_30sdp" />
+                android:textSize="@dimen/_12ssp" />
         </FrameLayout>
 
         <EditText
             android:id="@+id/fullNameEdt"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_45sdp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/background_input"
             android:hint="Full Name"
             android:imeOptions="actionNext"
@@ -68,7 +65,7 @@
             android:id="@+id/emailEdt"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_45sdp"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:background="@drawable/background_input"
             android:hint="Email"
             android:imeOptions="actionNext"
@@ -83,12 +80,12 @@
             android:id="@+id/passwordEdt"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_45sdp"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:background="@drawable/background_input"
             android:hint="Password"
             android:imeOptions="actionNext"
             android:importantForAutofill="no"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:paddingStart="@dimen/_16dp"
             android:paddingEnd="@dimen/_16dp"
             android:textColor="@color/primary_dark"
@@ -98,12 +95,12 @@
             android:id="@+id/cfPasswordEdt"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_45sdp"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:background="@drawable/background_input"
             android:hint=" Confirm Password"
             android:imeOptions="actionNext"
             android:importantForAutofill="no"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:paddingStart="@dimen/_16dp"
             android:paddingEnd="@dimen/_16dp"
             android:textColor="@color/primary_dark"
@@ -112,14 +109,14 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:animateLayoutChanges="true">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/registerBtn"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:text="Register"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_13ssp"

@@ -15,14 +15,11 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_40dp"
-            android:text="@string/wellcome_back"
-            android:textColor="@color/primary_dark"
-            android:textSize="@dimen/_18sdp"
-            android:textStyle="bold" />
+            android:layout_height="@dimen/_160sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/login" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -55,9 +52,10 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/background_input"
             android:hint="password"
+
             android:imeOptions="actionNext"
             android:importantForAutofill="no"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             android:paddingStart="@dimen/_16dp"
             android:textColor="@color/primary_dark"
             android:textSize="@dimen/_13sp" />

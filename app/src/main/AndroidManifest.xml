@@ -15,13 +15,20 @@
         android:theme="@style/Theme.ChatFireBase"
         tools:targetApi="31">
         <activity
+            android:name="com.example.Activities.ChatActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" />
+        <activity
+            android:name="com.example.Activities.UsersActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.Activities.HomeActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.Activities.SplasscreenActivity"
+            android:name="com.example.Activities.SigInActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.Activities.SigInActivity"
+            android:name="com.example.Activities.SplasscreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,6 +53,10 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
